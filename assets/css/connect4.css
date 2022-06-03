@@ -1,0 +1,25 @@
+
+
+.text-contents{
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text-contents h1{
+    display: flex;
+    padding: 1vh;
+    justify-content: center;
+}
+.text-contents h3{
+    
+    padding: 10vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+.connect4-rules{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin: 1em;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Game Libary</title>
+</head>
+
+<body>
+    <header>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <div id="myLinks">
+                <a href="rpsls.html">Rock Paper Sissors Spock Lizard</a>
+                <a href="connect4.html">Connect Four</a>
+                <a href="whack-a-mole.html">Whack a Mole</a>
+                <a href="break-out.html">Break Out</a>
+            </div>
+            <a href="javascript:void(0);" onclick="myFunction()" class="icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <h1>Game Library</h1>
+    <div id="game-library">.
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <a href="rpsls.html"><img src="assets/images/rpsls.png"></a>
+            <div class="text">Rock Paper Sissors Lizard Spock</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <a href="connect4.html"><img src="assets/images/connect4.png"></a>
+            <div class="text">Connect Four</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <a href="whack-a-mole.html"><img src="assets/images/whackamoleindex.png"></a>
+            <div class="text">Whack A Mole</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <a href="break-out.html"><img src="assets/images/breakout.png" class="breakout-img"></a>
+            <div class="text">Break Out</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <section>
+        <div class="index-paragraph">
+            <p>Select the game you would like to play</p>
+        </div>
+    </section>
+
+    <footer>
+        <h4>*This site is for education purposes only,</h4>
+        <h5>© All rights reserved 2022</h5>
+        <h6>Nigel Doheny</h6>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/0f96215e04.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

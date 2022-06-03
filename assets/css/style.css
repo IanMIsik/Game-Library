@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html{
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../images/background\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+/* 
+body {
+    background-color: #0fff;
+} */
+
+/* Navigation for index pages */
+.topnav {
+    overflow: hidden;
+    background-color: #59623500;
+    position: relative; 
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.topnav a.icon {
+    background: #4e0d3bfa;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.active {
+    background-color: #79554800;
+    color: white;
+    font-family:'Courier New', Courier, monospace
+}
+
+
+/*for index html*/
+h1,h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#game-library {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* height: 600px; */
+    border: 1px solid white;
+    border-radius: 25%;
+    max-width: 1000px;
+    position: relative;
+    margin: 5em auto;
+    color: white;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+/*break out image on index was too big and off center*/
+.breakout-img {
+    width: 120%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: -60px;
+}
+
+/* Images to center of div */
+.mySlides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.mySlides .text{
+    color: white;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color:#4e0d3bfa;
+}
+
+/* Caption text */
+.text {
+    color: #020000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #690909;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 .2em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.index-paragraph{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    margin: 2em;
+}
+
+/*for rock paper sissors*/
+#rpsls-game {
+    
+    display: block;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#rpsls-rules {
+
+    display: block;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+#rpsls-choices{
+
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10em;
+}
+#rpsls-reset{
+
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10em;
+       
+}
+#rpsls-reset button{
+
+    
+    padding: 15px 45px;
+    margin: .2em;
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+#rpsls-choices button{
+
+    padding: 15px 45px;
+    margin: .2em;
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#rock{
+    background-image: url(../images/icon-rock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#paper{
+
+    background-image: url(../images/icon-paper.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#sissors{
+
+    background-image: url(../images/icon-scissors.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#spock{
+    background-image: url(../images/icon-spock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#lizard{
+
+    background-image: url(../images/icon-lizard.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/*Whack a mole*/
+.whack-a-mole-grid {
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    border: 1px soild black;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 2em auto;
+}
+.whack-a-mole-instructions{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.whack-a-mole-rules{
+
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top:25%;
+    margin: 1em;   
+
+}
+
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.mole {
+    background-image: url(../images/whack-a-mole.png);
+    background-position: center;
+}
+.whack-a-mole-btns{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.whack-a-mole-btns button{
+ 
+    padding: 15px 45px;
+    margin: .2em;
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+/*for break out*/
+.break-out-game{
+    margin: 0 auto;
+    position: absolute;
+    align-items: center;
+}
+
+.break-out-grid {
+    position: relative;
+    width: 570px;
+    height: 300px;
+    border: 3px solid whitesmoke;
+    /* margin-top: 25vh;
+    margin-left:70vh; */
+  
+    margin: 10em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: #4e0d3bfa ;
+}
+
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: black;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white ;
+}
+.break-out-buttons{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.break-out-buttons button{
+
+
+    padding: 15px 45px;
+    margin: auto .5em;
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.breakout-rules h1{
+    color: white;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin: .3em;
+}
+.breakout-rules h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin:.2em;
+
+}
+.breakout-rules p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+}
+/*For connect4*/
+
+
+.connect4-grid div {
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 40px;
+    
+    
+}
+
+.connect4-grid {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: rgba(128, 0, 128, 0.164);
+    height: 488px;
+    width: 568px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-one {
+    background-color: red;
+    border-radius: 20px;
+}
+
+.player-two {
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.hide {
+    display: none;
+}
+.connect4-rules{
+    text-align: center;
+}
+
+/*footer for all pages*/
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    position: absolute;
+    bottom: -40px;
+    border: 0px;
+    display: flex;
+    height: 30px;
+    background-color: #e980fc00;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+

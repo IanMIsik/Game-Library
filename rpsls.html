@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Sissors Lizard Spock</title>
+</head>
+
+<body>
+    <header>
+        <header>
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="index.html" class="active">Home</a>
+                <div id="myLinks">
+                    <a href="rpsls.html">Rock Paper Sissors Spock Lizard</a>
+                    <a href="connect4.html">Connect Four</a>
+                    <a href="whack-a-mole.html">Whack a Mole</a>
+                    <a href="break-out.html">Break Out</a>
+                </div>
+                <a href="javascript:void(0);" onclick="myFunction()" class="icon">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </header>
+    </header>
+    <div id="rpsls-game">
+        <h1>Rock Paper Sissors Spock Lizard</h1>
+
+        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <h2>Your Choice: <span id="user-choice"></span></h2>
+        <h2>Result: <span id="rpsls-result"></span></h2>
+        <h2>Your Score: <span id="rpsls-score"></span></h2>
+        <h2>Computer Score: <span id="computer-rpsls-score"></span></h2>
+
+        <div id="rpsls-choices">
+            <button id="rock" class="rpsls-btn">Rock</button>
+            <button id="paper" class="rpsls-btn">Paper</button>
+            <button id="sissors" class="rpsls-btn">Scissors</button>
+            <button id="spock" class="rpsls-btn">Spock</button>
+            <button id="lizard" class="rpsls-btn">Lizard</button>
+        </div>
+        <div id="rpsls-reset">
+            <button>Reset</button>
+        </div>
+    </div>
+    <div id="rpsls-rules">
+        <h3>Rules</h3>
+        <p>Scissors cuts paper,
+            paper covers rock,
+            rock crushes lizard,
+            lizard poisons Spock,
+            Spock smashes scissors,
+            scissors decapitates lizard,
+            lizard eats paper,
+            paper disproves Spock,
+            Spock vaporizes rock,
+            and as it always has,
+            rock crushes scissors,
+            First to 5 wins.</p>
+    </div>
+
+    <footer>
+        <h4>*This site is for education purposes only,</h4>
+        <h5>© All rights reserved 2022</h5>
+        <h6>Nigel Doheny</h6>
+    </footer>
+
+
+    <script src="assets/js/rpsls.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/0f96215e04.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
