@@ -70,10 +70,9 @@ h1,h2 {
     height: 100%;
     align-items: center;
     justify-content: center;
-    /* height: 600px; */
     border: 1px solid white;
     border-radius: 25%;
-    max-width: 1000px;
+    max-width: 90%;
     position: relative;
     margin: 5em auto;
     color: white;
@@ -95,10 +94,15 @@ h1,h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: auto;
+    height: 50%;
 }
 .mySlides .text{
     color: white;
+    margin: 0 auto;
+}
+.mySlides img{
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* Next & previous buttons */
@@ -221,6 +225,7 @@ h1,h2 {
     align-items: center;
     justify-content: center;
     margin: 10em;
+    max-width: 100%;
 }
 #rpsls-reset{
 
@@ -242,6 +247,7 @@ h1,h2 {
     border-radius: 50%;
     outline: none;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 #rpsls-choices button{
 
@@ -253,6 +259,7 @@ h1,h2 {
     border-radius: 50%;
     outline: none;
     font-family: 'Courier New', Courier, monospace;
+    max-width: calc(100% - 15px);
 }
 
 #rock{
@@ -304,14 +311,19 @@ h1,h2 {
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
+
+.whack-a-mole-instructions p{
+    text-align: center;
+    font-size: 18px;
+    margin: .3em;
+}
 .whack-a-mole-rules{
 
     font-family:'Courier New', Courier, monospace;
     color: white;
     font-size: 15px;
     position: absolute;
-    top:25%;
-    margin: 1em;   
+    margin: 0 auto;   
 
 }
 
@@ -358,6 +370,8 @@ h1,h2 {
     position: relative;
     width: 570px;
     height: 300px;
+    max-width: 100%;
+    max-height: 100%;
     border: 3px solid whitesmoke;
     /* margin-top: 25vh;
     margin-left:70vh; */
@@ -441,8 +455,8 @@ h1,h2 {
     width: 80px;
     border: 1px solid white;
     border-radius: 40px;
-    
-    
+    max-width: 100%;
+    max-height: 100%
 }
 
 .connect4-grid {
@@ -451,6 +465,8 @@ h1,h2 {
     background-color: rgba(128, 0, 128, 0.164);
     height: 488px;
     width: 568px;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -481,10 +497,9 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     color:white;
     position: absolute;
-    bottom: -40px;
+    bottom:-50px;
     border: 0px;
     display: flex;
-    height: 30px;
     background-color: #e980fc00;
     left: 0px;
     right: 0px;
